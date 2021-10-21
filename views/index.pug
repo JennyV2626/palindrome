@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  h1 Palindrome Checker
+  form(method = "POST" action = "/")
+    label(for = "userText") Enter your text here:
+    br
+    input(type = "text" id = "userText" name = "userText" value = `${phrase}`)
+    br
+    br
+    button(type = "submit") Submit
+    br
+
+    if message
+      p=message
+
+    br
+    label Examples of  Palindromes:
+    br
+    label Radar
+    br
+    label Solos
+    br
+    label Madam
